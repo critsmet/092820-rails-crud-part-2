@@ -1,0 +1,14 @@
+<h2>Make a new Kombucha!</h2>
+
+<%= form_with model: @kombucha do |f| %>
+  <%= f.label :flavor %>
+  <%= f.text_field  :flavor%>
+  <br>
+  <%= f.label :brew_time %>
+  <%= f.number_field :brew_time %>
+  <br>
+  <%= f.label :notes %>
+  <%= f.text_area :notes %>
+  <br>
+  <%= f.submit %>
+<% end %>

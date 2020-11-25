@@ -1,0 +1,12 @@
+<h2>Kombuchas Index!</h2>
+
+<ul>
+  <% @kombuchas.each do |k| %>
+    <li><%= link_to "#{k.flavor}!", kombucha_path(k.id) %></li>
+  <% end %>
+</ul>
+
+<br>
+<br>
+
+<%= link_to "Make A New Kombucha", new_kombucha_path %>
